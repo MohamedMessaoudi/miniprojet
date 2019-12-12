@@ -1,4 +1,4 @@
-<div id="recherche">
+<div class="recherche">
 
 <?php
  $sql="SELECT * FROM user WHERE login like ?" ;
@@ -31,7 +31,7 @@
                 echo "(";
                 echo $line['nom'] .$line['prenom'];
                 echo ")</br>";
-                echo "<a href='index.php?action=accueil&id=".$line['id'] . "'>" .  'Vous êtes déjà amis'."</a><br/></br>";
+                echo "<a href='index.php?action=accueil&id=".$line['id'] . "'></a>".'Vous êtes déjà amis' ."<br/></br>";
                 
                 
 
@@ -50,9 +50,6 @@
                 echo ")</br>";
                 echo "<a href='index.php?action=demandeAmi&id=" . $line['id'] . "'>Demander</a></br></br>" ;
             
-            
-            
-    
             };
 
  

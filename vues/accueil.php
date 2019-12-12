@@ -49,9 +49,11 @@ if(!isset($_SESSION["id"]))
         if($ok==false)
         
         {
-
-        echo "Vous n'êtes pas encore ami, vous ne pouvez pas voir son mur !!";      
-
+        echo "<div id='interdit_accueil'>";      
+        echo "<img src='img/interdit.webp'>";    
+        //echo "Vous n'êtes pas encore ami, vous ne pouvez pas voir son mur !!";      
+        echo "</div>";   
+            
         } 
 
         else 

@@ -5,9 +5,7 @@
  
 }
 
-html {
-    height: 100%;
-}
+
 
 
 body {
@@ -55,6 +53,7 @@ list-style: none;
     background-color: darkgreen;
     padding-top: 15px;
     padding-bottom:15px;
+ 
     
 }
 .footer-categorie {
@@ -426,6 +425,14 @@ img.avatar {
 } 
 
 
+/* accueil interdit */
+#interdit_accueil {
+background-image: url(img/Avatar1.jpg);
+}
+
+
+
+
 
 /* AMIS */
 
@@ -452,18 +459,21 @@ text-align: center;
       border: 3px solid darkgreen;
   box-sizing: border-box;
   background-color: white;
+    border-radius: 2rem;
 }
 
 #mes_amis_demande {
         border: 3px solid darkgreen;
   box-sizing: border-box;
   background-color: white;
+    border-radius: 2rem;
 }
 
 #mes_amis_attente {
         border: 3px solid darkgreen;
   box-sizing: border-box;
   background-color: white;
+    border-radius: 2rem;
 }
 
 
@@ -491,17 +501,30 @@ text-align: center;
 }
 
 
-#recherche {
+.recherche {
+    border: 3px solid darkgreen;
 text-align: center;
 align-content: center;
 margin-bottom: 5rem;
 margin-top: 5rem;
+background-color:white;
+margin-left: 30%;
+margin-right: 30%;
+border-radius: 5rem;
 }
+
+.recherche a {
+text-decoration: none;
+    color: darkgreen;
+
+}
+
 
 #recherche_ami {
       border: 3px solid darkgreen;
   box-sizing: border-box;
   background-color: white;
+    
 }
 
 #recherche_pas_ami {
@@ -509,3 +532,16 @@ margin-top: 5rem;
   box-sizing: border-box;
   background-color: white;
 }
+
+
+
+
+
+
+/* 404 PAGE 404 */
+
+
+.page_404 img_404 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
