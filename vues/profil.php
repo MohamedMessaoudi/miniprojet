@@ -22,10 +22,9 @@ $line=$q->fetch();
 <div id="avatar_profil">
     <?php echo "<img src='"; ?>
  <?php echo $line['avatar']; ?>
-    <?php echo "' >"; ?>
+    <?php echo "' style='width: 100%;height: 100%;'  >"; ?>
     
 </div>
-
 
 
 
