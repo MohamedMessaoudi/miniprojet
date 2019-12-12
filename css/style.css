@@ -489,3 +489,23 @@ text-align: center;
   box-sizing: border-box;
   background-color: white;
 }
+
+
+#recherche {
+text-align: center;
+align-content: center;
+margin-bottom: 5rem;
+margin-top: 5rem;
+}
+
+#recherche_ami {
+      border: 3px solid darkgreen;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#recherche_pas_ami {
+      border: 3px solid darkgreen;
+  box-sizing: border-box;
+  background-color: white;
+}

@@ -16,6 +16,13 @@ $line=$q->fetch();
 ?>
 <h2> Profil de <?php echo $line['nom']." ".$line['prenom']; ?></h2><br><br>
 
+<?php
+    
+    echo "<a href='index.php?action=accueil&id=" .$line['id'] ."'> Aller sur son mur ? </a>";
+    
+    ?>
+
+
 <div id="mon_profil">
 
 
