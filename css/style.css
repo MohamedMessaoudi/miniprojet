@@ -473,6 +473,8 @@ grid-template-columns: 40% 40%;
     grid-column-gap : 2rem;
 justify-content: center;
 text-align: center;
+    align-content: center;
+
     margin-bottom: 5rem;
 }
 
