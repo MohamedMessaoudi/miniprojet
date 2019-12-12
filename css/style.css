@@ -465,3 +465,25 @@ text-align: center;
   box-sizing: border-box;
   background-color: white;
 }
+
+
+#mon_profil {
+   display: grid;
+grid-template-columns: 40% 40%;
+    grid-column-gap : 2rem;
+justify-content: center;
+text-align: center;
+    margin-bottom: 5rem;
+}
+
+#avatar_profil {
+      border: 3px solid darkgreen;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#detail_profil {
+      border: 3px solid darkgreen;
+  box-sizing: border-box;
+  background-color: white;
+}

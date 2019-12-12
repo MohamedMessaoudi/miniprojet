@@ -14,12 +14,24 @@ $line=$q->fetch();
 
 
 ?>
-   <div id="mon_profil">
-    <h2> Profil de <?php echo $line['nom']." ".$line['prenom']; ?></h2><br><br>
+<h2> Profil de <?php echo $line['nom']." ".$line['prenom']; ?></h2><br><br>
 
+<div id="mon_profil">
+
+
+<div id="avatar_profil">
+ <?php echo $line['avatar']; ?>
+    
+</div>
+
+
+
+
+   <div id="detail_profil">
     Pseudo = <?php echo $line['login'] ;?>
     <br>
     Email = <?php echo $line['email']; ?>
     <br>
 <?php } ?>  
+</div>
 </div>
