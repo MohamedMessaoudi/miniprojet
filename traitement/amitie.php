@@ -27,7 +27,10 @@ $query->execute(array($_SESSION["id"],$_GET["id"],$_SESSION["id"],$_GET["id"]));
 $query = $pdo->prepare($sql);
 $query->execute(array($_SESSION["id"],$_GET["id"]));
 
-header('Location:index.php');
+                    
+               header('Location:index.php?action=amis');     
+              message("Demande envoyé !");      
+
 //echo "votre demande a bien ete envoyée";
   }
 ?>
