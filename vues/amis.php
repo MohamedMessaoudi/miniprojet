@@ -30,7 +30,7 @@
         $q = $pdo->prepare($sql);
         $q->execute(array($_SESSION['id']));
         
-        echo "<div id='mes_amis_attente'>   </br> Ils ne vous ont pas répondus :";
+        echo "<div id='mes_amis_attente'> Ils ne vous ont pas répondus :";
         
         while($line=$q->fetch()) 
         
@@ -38,18 +38,19 @@
           
           echo "</br> <a href='index.php?action=profil&id=" .$line['id'] ."'> ";
           echo $line['login'] ;
-          echo "</a>";
-          echo "</div>";
+          echo "</a> ";
+         
 
         }
     
-    
+     echo "</div>";
+          
         
         $sql = "SELECT user.* FROM user WHERE id IN(SELECT idUtilisateur1 FROM lien WHERE idUtilisateur2=? AND etat='attente')";
         $q = $pdo->prepare($sql);
         $q->execute(array($_SESSION['id']));
         
-        echo "<div id='mes_amis_demande'>   </br> Ils vous veulent en ami :";
+        echo "<div id='mes_amis_demande'> Ils vous veulent en ami :";
         
         while($line=$q->fetch()) 
         
@@ -57,13 +58,14 @@
             
           echo "</br> <a href='index.php?action=profil&id=" .$line['id'] ."'> ";
           echo $line['login'] ;
-          echo "</a>";
+          echo " : </a>";
           echo" <a href='index.php?action=accepter&id=".$line['id']."'>" .'Oui  '." </a>";
           echo" <a href='index.php?action=refuser&id=".$line['id']."'>" .'Non'." </a>";
-          echo "</div>";
+         
 
         }
-    
+     echo "</div>";
+          
       }
 
     ?>
